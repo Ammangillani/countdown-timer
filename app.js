@@ -10,8 +10,10 @@ let count = setInterval(function () {
   // let minutes = Math.floor(time / (1000 * 60 * 60 * 24));
   let second = Math.floor((time % (1000 * 60)) / 1000);
 
-  document.getElementById("timer").innerHTML =
-    days + " " + hours + " " + minutes + " " + second + " ";
+  document.getElementById("day").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("secondes").innerHTML = second;
 
   if (time < 0) {
     clearInterval(count);

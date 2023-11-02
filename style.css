@@ -4,9 +4,7 @@
 }
 
 body {
-    /* background: url(./asset/andreas-rasmussen-OUSa9MU4zZc-unsplash.jpg); */
     background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(./asset/sandro-gonzalez-dBEJG6hv224-unsplash.jpg);
-    /* filter: brightness(); */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,20 +23,36 @@ h1 {
     font-size: 70px;
     text-transform: uppercase;
     color: white;
-    /* word-spacing: 2rem; */
     font-family: Poppins;
+
 }
 
 h2 {
+    color: white;
     font-size: 60px;
-    word-spacing: 2rem;
     font-family: Poppins;
 }
 
-span {
-    word-spacing: 9rem;
-    font-size: 3rem;
-    font-family: Poppins;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+h3 {
+    font-family: poppins;
+    font-size: 2rem;
     color: white;
+}
+
+.wrapper {
+
+    font-size: 40px;
+    color: aqua;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.wrappercontent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 22px;
 }
