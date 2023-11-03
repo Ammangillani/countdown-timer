@@ -24,6 +24,7 @@ h1 {
     text-transform: uppercase;
     color: white;
     font-family: Poppins;
+    filter: drop-shadow(5px 8px 2px black);
 
 }
 
@@ -31,18 +32,21 @@ h2 {
     color: white;
     font-size: 60px;
     font-family: Poppins;
+    filter: drop-shadow(5px 8px 2px black);
+
 }
 
 h3 {
     font-family: poppins;
     font-size: 2rem;
     color: white;
+    filter: drop-shadow(5px 8px 2px black);
+
 }
 
 .wrapper {
-
     font-size: 40px;
-    color: aqua;
+    /* color: aqua; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -55,4 +59,33 @@ h3 {
     align-items: center;
     flex-direction: row;
     margin-left: 22px;
+}
+
+audio {
+    display: block;
+}
+
+@media(max-width:450px) {
+    h2 {
+        color: white;
+        font-size: 2rem;
+        font-family: Poppins;
+    }
+
+    h3 {
+        font-family: poppins;
+        font-size: 1rem;
+        color: white;
+
+    }
+
+    .wrappercontent {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        margin-right: 1rem;
+    }
+
+
 }
