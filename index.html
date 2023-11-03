@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="shortcut icon" href=".//asset/andreas-rasmussen-OUSa9MU4zZc-unsplash.jpg" type="image/x-icon">
+    <link href="https://fonts.cdnfonts.com/css/ibm-plex-mono" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
 
-        <audio autoplay>
+        <audio loop>
             <source
                 src="./asset/new-years-eve-in-peru-fireworks-fire-crackers-and-rockets-to-celebrate-the-new-year-pisco-peru-2012-17692.mp3"
                 type="audio/mp3">
@@ -22,7 +23,6 @@
     </div>
 
     <h1>Happy new year</h1>
-
 
     <div class="wrapper">
         <h2 id="day">00</h2>
@@ -34,10 +34,11 @@
     <div class="wrappercontent">
         <h3>days</h3>
         <h3>hours</h3>
-        <h3>Minutes</h3>
+        <h3 style="margin-left: 2PX;">Minutes</h3>
         <h3>second</h3>
     </div>
     </div>
+    <canvas id="canvas"></canvas>
 
 
     <script src="./app.js"></script>
