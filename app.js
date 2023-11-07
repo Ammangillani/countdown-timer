@@ -28,11 +28,10 @@ canvas.height = screenHeight;
 canvas.width = screenWidth;
 c = canvas.getContext("2d");
 
-let array = []; //object array
-let sparkCount; //individual object
+let array = [];
+let sparkCount;
 let wave = false;
 
-//used for interval
 let allow = true;
 let off;
 let time = 0;
@@ -181,7 +180,7 @@ const colorArray = [
   "yellowgreen",
 ];
 
-//colors better suited for fireworks
+// better suited for fireworks
 const brightColors = [
   "turquoise",
   "darkturquoise",
@@ -408,17 +407,17 @@ setTimeout(function () {
 window.onload = function () {
   setTimeout(function () {
     creator();
-  }, 1000); //waits a second
+  }, 1000);
 
   setInterval(function () {
     creator();
 
     setTimeout(function () {
       creator();
-    }, 1750); //waits 1.75 seconds
+    }, 1750);
 
     wavyFire();
-  }, 3500); //repeats every 3.5 seconds
+  }, 3500);
 
   animate();
 };
